@@ -67,7 +67,7 @@ function BentoGrid() {
     <ResponsiveGridLayout
       className="layout"
       layouts={{ lg: lgLayout, md: mdLayout, sm: smLayout }}
-      breakpoints={{ lg: 768, md: 480, sm: 0 }}
+      breakpoints={{ lg: 1050, md: 768, sm: 0 }}
       cols={{ lg: 4, md: 2, sm: 1 }}
       rowHeight={270}
       margin={[18, 18]}
