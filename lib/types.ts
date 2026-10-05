@@ -6,11 +6,15 @@ export interface Project {
   live?: string;
   stars?: number;
   highlight?: string;
+  image?: string;
+  date?: string;
+  type?: string;
 }
 
 export interface Experience {
   role: string;
   company: string;
+  logo?: string;
   location?: string;
   period: string;
   type: string;
