@@ -80,3 +80,10 @@ html, body, div, span, header, nav, main, a, button, section, article, h1, h2, h
   background: #cbd5e1;
   border-radius: 3px;
 }
+
+@media (pointer: fine) {
+  body.custom-cursor-active,
+  body.custom-cursor-active * {
+    cursor: none !important;
+  }
+}
