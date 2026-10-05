@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import { HeaderNav } from "@/components/layout/HeaderNav";
 import { ToastProvider } from "@/components/ui/ToastProvider";
-import { SpotlightGlow } from "@/components/ui/SpotlightGlow";
+import { CustomCursor } from "@/components/ui/CustomCursor";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -29,7 +28,6 @@ export const metadata: Metadata = {
   description:
     "Portfolio of Jeel Rajpara - Frontend Developer & Freelance Digital Marketer. Crafting high-performance React/Next.js web applications, UI/UX experiences, and data-driven SEO & growth strategies.",
   keywords: [
-    // Frontend Development
     "Frontend Developer",
     "React Developer",
     "Next.js Developer",
@@ -41,7 +39,6 @@ export const metadata: Metadata = {
     "Tailwind CSS Specialist",
     "Frontend Architecture",
     "Web Performance Optimization",
-    // Digital Marketing
     "Digital Marketing Specialist",
     "SEO Expert",
     "Search Engine Optimization",
@@ -51,7 +48,6 @@ export const metadata: Metadata = {
     "Google Ads Specialist",
     "Conversion Rate Optimization",
     "Digital Growth Consultant",
-    // Freelancing
     "Freelance Frontend Developer",
     "Freelance Digital Marketer",
     "Hire React Developer",
@@ -106,7 +102,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Structured Data (JSON-LD) for Search Engines
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -185,19 +180,6 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="light" className={`${inter.variable} ${jetbrainsMono.variable}`}>
       <head>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-CC87QFFW5R"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-CC87QFFW5R');
-          `}
-        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -208,7 +190,7 @@ export default function RootLayout({
           <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-blue-400/5 dark:bg-blue-500/5 blur-[100px]" />
           <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-emerald-400/5 dark:bg-emerald-500/5 blur-[100px]" />
         </div>
-        <SpotlightGlow />
+        <CustomCursor />
         <ToastProvider>
           <HeaderNav />
           <main className="max-w-7xl mx-auto px-2 sm:px-4 pt-2 relative z-0">
