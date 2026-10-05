@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About Me - Background & Career Journey',
+  title: 'About Jeel Rajpara',
   description:
     'Learn about Jeel Rajpara - Frontend Developer & Digital Marketing practitioner with 2+ years of experience in React, Next.js, and modern web architectures.',
   keywords: [
