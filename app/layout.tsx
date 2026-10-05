@@ -4,6 +4,7 @@ import "./globals.css";
 import { HeaderNav } from "@/components/layout/HeaderNav";
 import { ToastProvider } from "@/components/ui/ToastProvider";
 import { SpotlightGlow } from "@/components/ui/SpotlightGlow";
+import { AnimatedFavicon } from "@/components/ui/AnimatedFavicon";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -195,6 +196,7 @@ export default function RootLayout({
           <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-emerald-400/5 dark:bg-emerald-500/5 blur-[100px]" />
         </div>
         <SpotlightGlow />
+        <AnimatedFavicon />
         <ToastProvider>
           <HeaderNav />
           <main className="max-w-7xl mx-auto px-2 sm:px-4 pt-2 relative z-0">
