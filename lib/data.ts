@@ -5,13 +5,13 @@ export const personalInfo = {
   title: "Frontend Developer",
   tagline: "Crafting fast, accessible, and delightful digital web experiences.",
   bio: "Frontend Developer with 2+ years of experience building modern web applications. Focused on React, Next.js, and TypeScript, with a deep interest in frontend architecture, performance optimization, and refined micro-interactions.",
-  location: "India",
+  location: "Ahmedabad, India",
   status: "Available for new opportunities",
   socials: {
-    github: "https://github.com",
-    linkedin: "https://linkedin.com",
-    instagram: "https://instagram.com",
-    email: "jeelrajpara@gmail.com",
+    github: "https://github.com/jeelrajpara18",
+    linkedin: "https://www.linkedin.com/in/jeel-rajpara-/",
+    instagram: "https://www.instagram.com/abitmoreofjeell_/",
+    email: "jeelrajpara18@gmail.com",
     twitter: "https://twitter.com"
   }
 };
@@ -27,24 +27,31 @@ export const projects: Project[] = [
   {
     title: "AI Interview Mocker",
     description: "An AI-powered full-stack mock interview platform. Generates real-time custom questions based on job roles, records speech responses, and delivers instant audio feedback with performance metrics.",
-    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Gemini API", "Clerk"],
-    github: "https://github.com",
-    live: "https://example.com",
-    highlight: "Featured Project"
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    github: "https://github.com/jeelrajpara18/Ai-mocker",
+    live: "https://ai-mocker-sage.vercel.app/",
+    highlight: "Featured Project",
+    image: "/AiInterviewMocker.png",
+    date: "August - 2024",
+    type: "Personal"
   },
   {
     title: "Realtime Chat Application",
     description: "High-performance instant messaging app supporting 1-on-1 and group channels, live online presence status, rich media sharing, and instant unread notification counts.",
-    tech: ["React.js", "Node.js", "Express", "Socket.io", "MongoDB", "Zustand"],
-    github: "https://github.com",
-    live: "https://example.com"
+    tech: ["React.js", "Node.js", "Express", "Socket.io"],
+    github: "https://github.com/jeelrajpara18/chat-app",
+    live: "https://example.com",
+    date: "December - 2023",
+    type: "Personal"
   },
   {
     title: "Interactive Quiz Platform",
     description: "Dynamic quiz platform with timed test sessions, real-time leaderboard statistics, subject categories, and detailed score breakdown charts upon completion.",
-    tech: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind CSS", "REST API"],
+    tech: ["Next.js", "TypeScript", "PostgreSQL"],
     github: "https://github.com",
-    live: "https://example.com"
+    live: "https://example.com",
+    date: "March - 2023",
+    type: "Personal"
   }
 ];
 
@@ -52,37 +59,41 @@ export const experiences: Experience[] = [
   {
     role: "Frontend Developer",
     company: "Shiv Infotech",
-    period: "2024 - Present",
+    logo: "/shiv-logo.png",
+    period: "Oct 2025 - Sept 2026",
     type: "Full-time",
     highlights: [
-      "Architected and deployed responsive client dashboards in React and Next.js, improving initial page load time by 35%.",
-      "Collaborated closely with UI/UX designers to build custom reusable component libraries with Tailwind CSS.",
-      "Integrated complex RESTful endpoints and optimized state management using Redux Toolkit and Zustand."
+      "Learnt React, React Native, and Next.js and implemented them in production environments.",
+      "Contributed to multiple multi-language projects, ensuring seamless localization and internationalization.",
+      "Collaborated closely with cross-functional teams to deliver high-quality, responsive applications."
     ],
-    tech: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "Redux Toolkit"]
+    tech: ["React.js", "React Native", "Next.js"]
   },
   {
-    role: "Junior Frontend Engineer",
-    company: "FutureStack Solutions",
-    period: "2023 - 2024",
+    role: "Frontend Developer",
+    company: "Future Stack Solutions",
+    logo: "/fss.png",
+    period: "Aug 2023 - July 2024",
     type: "Full-time",
     highlights: [
-      "Built interactive user interfaces and forms with robust client-side validation using React and TypeScript.",
-      "Implemented smooth micro-animations using Framer Motion and GSAP for enhanced interactive user engagement.",
-      "Participated in active code reviews, standardizing git workflows and modular component organization."
+      "Mastered React and built complex interactive user interfaces.",
+      "Developed 'Samaj', a robust communication platform connecting people within a community.",
+      "Optimized component rendering and managed state for seamless real-time interactions."
     ],
-    tech: ["React.js", "JavaScript", "Framer Motion", "Bootstrap", "REST APIs"]
+    tech: ["React.js", "JavaScript"]
   },
   {
-    role: "Frontend Intern",
+    role: "Intern",
     company: "Saeculum Solutions",
-    period: "2022 - 2023",
+    logo: "/saeculum-logo.png",
+    period: "Apr 2023 - July 2023",
     type: "Internship",
     highlights: [
-      "Developed responsive pixel-perfect web pages from Figma mocks using HTML5, CSS3, and JavaScript.",
-      "Fixed UI cross-browser compatibility issues and improved dynamic mobile layouts across various devices."
+      "Learned the fundamentals of web development including HTML, CSS, and JavaScript.",
+      "Built static responsive web pages and converted design mockups into functional UI.",
+      "Gained hands-on experience with version control and collaborative development practices."
     ],
-    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "Git"]
+    tech: ["HTML", "CSS", "JavaScript"]
   }
 ];
 
