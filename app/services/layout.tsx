@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Services & Freelance Solutions',
+  title: 'Web Development & Digital Marketing Services',
   description:
     'Explore freelance frontend development (React.js, Next.js) and digital marketing services (SEO, Social Media, Analytics) offered by Jeel Rajpara.',
   keywords: [
